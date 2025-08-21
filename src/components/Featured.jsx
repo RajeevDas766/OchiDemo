@@ -14,19 +14,19 @@ function Featured() {
 
   return (
     <div className="w-full py-20">
-      <div className="w-full px-20 border-b-[1px] border-zinc-700 pb-20">
-        <h1 className="text-7xl font-['Neue_Montreal'] tracking-tight">
+      <div className="w-full px-6 md:px-20 border-b-[1px] border-zinc-700 pb-20">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-['Neue_Montreal'] tracking-tight">
           Featured Projects
         </h1>
       </div>
-      <div className="px-20">
-        <div className="cards w-full flex gap-10 mt-10">
+      <div className="px-6 md:px-20">
+        <div className="cards w-full flex flex-col md:flex-row gap-6 md:gap-10 mt-10">
           <motion.div
             onHoverStart={() => handleHover(0)}
             onHoverEnd={() => handleHoverEnd(0)}
-            className="cardcontainer relative w-1/2 h-[75vh]"
+            className="cardcontainer relative w-full md:w-1/2 h-64 sm:h-80 md:h-[75vh]"
           >
-            <h1 className="absolute flex overflow-hidden text-[#CDEA68] left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] leading-none tracking-tighter text-8xl">
+            <h1 className="absolute flex overflow-hidden text-[#CDEA68] left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] leading-none tracking-tighter text-5xl sm:text-7xl md:text-8xl">
               {"FYDE".split("").map((item, index) => (
                 <motion.span
                   key={index}
@@ -51,9 +51,9 @@ function Featured() {
           <motion.div
             onHoverStart={() => handleHover(1)}
             onHoverEnd={() => handleHoverEnd(1)}
-            className="cardcontainer relative w-1/2 h-[75vh]"
+            className="cardcontainer relative w-full md:w-1/2 h-64 sm:h-80 md:h-[75vh]"
           >
-            <h1 className="absolute flex overflow-hidden text-[#CDEA68] left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] leading-none tracking-tighter text-8xl">
+            <h1 className="absolute flex overflow-hidden text-[#CDEA68] left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] leading-none tracking-tighter text-5xl sm:text-7xl md:text-8xl">
               {"VISE".split("").map((item, index) => (
                 <motion.span
                   key={index}

@@ -6,7 +6,7 @@ function LandingPage() {
   return (
     <div data-scroll data-scroll-section data-scroll-speed="-.3"
      className="w-full h-screen bg-zinc-900 pt-1">
-      <div className="textstructure mt-35 px-20">
+      <div className="textstructure mt-35 px-6 md:px-20">
         {["We Create", "Eye Opening", "Presentations"].map((item, index) => {
           return (
             <div className="masker">
@@ -27,12 +27,12 @@ function LandingPage() {
           );
         })}
       </div>
-      <div className="border-t-[1px] border-zinc-800 mt-20 flex justify-between items-center py-5 px-20">
+      <div className="border-t-[1px] border-zinc-800 mt-20 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 md:gap-0 py-5 px-6 md:px-20">
         {[
           "For public and private companies",
           "From the first pitch to IPO",
         ].map((item, index) => (
-          <p className="text-md font-light tracking-tight leading-none">
+          <p className="text-sm md:text-md font-light tracking-tight leading-none">
             {item}
           </p>
         ))}
